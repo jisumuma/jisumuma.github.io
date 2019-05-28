@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Demo
-categories: markdown
+categories: test
 date: 2016-08-24 12:38:11
 pid: 20160824-123811
 pin: 100
@@ -147,10 +147,10 @@ I start my morning with a cup of coffee and
 > \[id]: http://example.com/ "With a Title"
 
 ## image
-![alt text](/w3c/images/avator.jpg "Title")
+![alt text](/w3c/images/avatar.jpg "Title")
 ![alt text][id]
 
-[id]: /w3c/images/avator.jpg "Title"
+[id]: /w3c/images/avatar.jpg "Title"
 
 > The same as Link
 > But start with  `!`

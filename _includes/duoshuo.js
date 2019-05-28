@@ -27,7 +27,6 @@ var _hmt = _hmt || [];
   var duoshuoShortName = "{{ site.duoshuo_short_name }}";
   var duoshuoUserName = "{{ site.duoshuo_user_name }}";
 </script>
-<script src="{{ site.duoshuo_url }}"></script>
 <style type="text/css">
 /**************override duoshuo css*************/
 #ds-share #ds-reset.ds-share-inline {

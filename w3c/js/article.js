@@ -121,7 +121,7 @@ $(document).ready(function(){
     $("#middle-panel").css("margin-top", $("#top-menu").height()+20);
     showTimeAgo();
     showActivedCategory(g_category);
-    showDuoshuoData();
+    // showDuoshuoData();
   }
 
   // Main
@@ -136,7 +136,7 @@ $(document).ready(function(){
       $.jqPaginator('#paginator', {
         totalCounts: g_posts.length,
         pageSize: g_pageSize,
-        visiblePages: g_posts.length/g_pageSize >= 10 ? 10 : Math.ceil(g_posts.length/g_pageSize),  // 向上取整
+        visiblePages: g_posts.length/g_pageSize >= 5 ? 5 : Math.ceil(g_posts.length/g_pageSize),  // 向上取整
         currentPage: 1,
         onPageChange: function (num, type) {
           // catch exception cause it would stop jqPaginator

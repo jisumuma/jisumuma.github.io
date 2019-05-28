@@ -38,7 +38,7 @@
       owner: "[PageCache]",
       _log: function(level, info) {
         if (Log.level >= level && console) {
-          console.log(info);
+          // console.log(info);
         }
       },
       error: function(info, obj) {
@@ -301,7 +301,7 @@
 
       // timeout
       _script.timer = setTimeout(function () {
-        Log.error("Jsonp>>Timeout " + _jsonpUrl);
+        // Log.error("Jsonp>>Timeout " + _jsonpUrl);
         window[_callbackName] = null;
         _tag.removeChild(_script);
 

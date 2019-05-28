@@ -20,6 +20,7 @@
                     prev: '',
                     next: '',
                     last: '',
+                    total: '',
                     page: ''
                 }, options);
             }
@@ -108,6 +109,7 @@
             self.isEnable('statistics') && html.unshift(self.buildItem('statistics'));
             self.isEnable('next') && html.push(self.buildItem('next', self.options.currentPage + 1));
             self.isEnable('last') && html.push(self.buildItem('last', self.options.totalPages));
+            html.push(self.buildItem('total', self.options.currentPage));
 
             if (self.options.wrapper) {
                 self.$container.html($(self.options.wrapper).html(html.join('')).jqPaginatorHTML());
@@ -143,6 +145,9 @@
             if (!self.isEnable('last') || options.currentPage >= options.totalPages) {
                 $('[jp-role=last]', self.$container).addClass(options.disableClass);
             }
+           
+            $('[jp-role=total]', self.$container).html('<a href="javascript:;">共 ' + options.totalPages + ' 页</a>');
+            
 
             $('[jp-role=page]', self.$container).removeClass(options.activeClass);
             $('[jp-role=page][jp-data=' + options.currentPage + ']', self.$container).addClass(options.activeClass);
@@ -244,6 +249,7 @@
         prev: '<li class="prev"><a href="javascript:;">Previous</a></li>',
         next: '<li class="next"><a href="javascript:;">Next</a></li>',
         last: '<li class="last"><a href="javascript:;">Last</a></li>',
+        total: '<li class="total"><a href="javascript:;">Total</a></li>',
         page: '<li class="page"><a href="javascript:;">{{page}}</a></li>',
         totalPages: 0,
         totalCounts: 0,
