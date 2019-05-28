@@ -1,3 +1,5 @@
+# Note
+This is a jekyII template forked from https://github.com/jokinkuang/stepbystep.
 # stepbystep  
 A jekyll theme, simple and clear, compatible with PC iPad and Phone (RWD)
 
