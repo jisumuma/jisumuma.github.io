@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Demo
-categories: test
+categories: markdown
 date: 2018-08-24 12:38:11
 pid: 20180824-123811
 pin: 100
